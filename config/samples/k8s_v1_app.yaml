@@ -1,0 +1,17 @@
+apiVersion: k8s.bryce-huang.club/v1
+kind: App
+metadata:
+  name: app-sample
+spec:
+  image: nginx
+  replicas: 3
+  context: /
+  host: bryce.club
+  svcPort: 80
+
+
+#  Port     int32  `json:"svcPort"`
+#  Image    string `json:"image"`
+#  Replicas *int32 `json:"replicas"`
+#
+#  Context string `json:"context"`
